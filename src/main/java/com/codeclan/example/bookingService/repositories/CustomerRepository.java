@@ -1,4 +1,7 @@
 package com.codeclan.example.bookingService.repositories;
 
-public interface CustomerRepository {
+import com.codeclan.example.bookingService.models.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CustomerRepository extends JpaRepository<Customer, Long> {
 }
